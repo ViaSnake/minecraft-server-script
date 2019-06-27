@@ -14,13 +14,13 @@ case $1 in
     "start")
     for ((i=15;i>0;i--))
     do
-    echo Wait for $i second...
+    echo "Wait for $i second..."
     sleep 1s
     done
-    echo Run $base/$2/$start...
+    echo "Run $base/$2/$start..."
     sleep 5s
     cd $base/$2 && ./$start
-    echo Complete.
+    echo "Complete."
     ;;
 
     "restart")
